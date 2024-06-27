@@ -102,7 +102,7 @@ footer {
 }
 /* ----- Media Query ---- */
 
-@media (max-width: 330px) {
+@media (max-width: 800px) {
   body {
     background: #0a0a23;
     background-image: none;
@@ -116,7 +116,7 @@ footer {
     color: white;
   }
   #game {
-    width: 100%;
+    width: 900px;
   }
   #game .image img {
     width: 100%;
