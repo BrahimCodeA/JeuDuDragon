@@ -125,12 +125,18 @@ footer {
 }
 
 @media (max-width: 500px) {
+  html, body {
+    height: 100%; /* Assure que html et body prennent toute la hauteur */
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0; /* Évite les marges par défaut */
+    height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    margin: 0;
   }
 
   #game {
@@ -139,7 +145,7 @@ footer {
     text-align: center;
     box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
   }
-  
+
   .stat {
     font-size: 1.2em;
   }
