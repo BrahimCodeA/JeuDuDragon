@@ -125,13 +125,21 @@ footer {
 }
 
 @media (max-width: 500px) {
-  #game {
-    width: 490px;
-    margin-top: 30%;
+  body {
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 100vh;
+    margin: 0; /* Évite les marges par défaut */
   }
+
+  #game {
+    width: 90%; /* Utilise un pourcentage pour la réactivité */
+    max-width: 490px;
+    text-align: center;
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+  }
+  
   .stat {
     font-size: 1.2em;
   }
