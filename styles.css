@@ -96,8 +96,8 @@ footer {
     bottom: 0;
   }
   #game {
-    width: 900px;
-    margin: 20% auto;
+    width: 1000px;
+    margin-top: 50%;
   }
   #game .image img {
     width: 100%;
