@@ -127,8 +127,11 @@ footer {
 
 @media (max-width: 500px) {
   #game {
-    width: 450px;
-    margin: 25% 0 0 0;
+    width: 490px;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .stat {
     font-size: 1.2em;
