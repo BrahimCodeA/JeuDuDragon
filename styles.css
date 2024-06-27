@@ -1,48 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-image: url('./img/Fond.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
-  background-attachment: fixed;
-
+  overflow-x: hidden;
 }
+
 h1 {
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin: 5% 0;
+  font-size: 2em;
 }
+
 .titre-responsive {
   display: none;
 }
+
 #text {
   background-color: #0a0a23;
   color: #ffffff;
   padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
   transition: opacity 0.3s ease-in-out;
 }
+
 #game {
-  width: 40%;
+  width: 80%;
+  max-width: 600px;
   border-radius: 5px;
   background-color: rgba(219, 217, 217, 0.486);
   color: #ffffff;
-  margin: auto;
+  margin: 5% auto;
   border: 6px solid black;
   box-shadow: 10px 10px 10px rgba(188, 124, 124, 0.1);
-  justify-content: center;
-  align-items: center;
   text-align: center;
-} 
+}
+
 #game .image img {
   width: 100%;
 }
+
 #controls,
 #stats {
   border: 2px solid #0a0a23;
@@ -51,6 +58,7 @@ h1 {
   color: #0a0a23;
   background: white;
 }
+
 #monsterStats {
   display: none;
   border: 2px solid #0a0a23;
@@ -70,13 +78,10 @@ button {
   background-color: #0a0a23;
   background-image: linear-gradient(#0a0a23, #0a0a23);
   border: 3px solid #0a0a23;
-  transition: opacity 0.3s , transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
   font-size: 0.7em;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
   padding: 2px;
+  font-weight: 500;
 }
 
 .fade-in {
@@ -86,21 +91,23 @@ button {
 .fade-out {
   opacity: 0;
 }
+
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #0a0a23;
   color: white;
   padding: 10px 10px;
   width: 100%;
-  z-index: 1000;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
-/* ----- Media Query ---- */
+
+@media (max-width: 1200px) {
+  #game {
+    width: 70%;
+    max-width: 800px;
+  }
+}
 
 @media (max-width: 800px) {
   body {
@@ -108,75 +115,45 @@ footer {
     background-image: none;
   }
   h1 {
-    margin-top: 20%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    color: white;
+    font-size: 1.5em;
   }
   #game {
-    width: 900px;
-  }
-  #game .image img {
-    width: 100%;
+    width: 90%;
+    max-width: 600px;
   }
   .stat {
-    padding-right: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   button {
-    font-size: 1.1em;
-    font-weight: 900;
-    padding: 6px;
+    font-size: 1em;
   }
-  
   #text {
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 1.2em;
   }
-  
   footer {
-    position: relative;
-    position: absolute;
     bottom: 0;
-    background-color: #0a0a23;
-    color: white;
-    width: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 }
 
-@media (min-width: 440px) and (max-width: 670px) {
+@media (max-width: 500px) {
   #game {
-    width: 600px;
-    margin: 6% auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  #game .image img {
     width: 100%;
+    padding: 20px;
+  }
+  .stat {
+    font-size: 1.2em;
   }
   button {
-    font-size: 12px;
+    font-size: 0.9em;
   }
-  
   #text {
     font-size: 1em;
-    font-weight: 600;
   }
-  
   footer {
-    position: relative;
-    position: absolute;
     bottom: 0;
-    background-color: #0a0a23;
-    color: white;
-    width: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 }
+
 
 
   
