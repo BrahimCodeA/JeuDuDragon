@@ -105,6 +105,7 @@ footer {
 @media (max-width: 330px) {
   body {
     background: #0a0a23;
+    background-image: none;
   }
   h1 {
     margin-top: 20%;
@@ -115,7 +116,7 @@ footer {
     color: white;
   }
   #game {
-    width: 95%;
+    width: 100%;
   }
   #game .image img {
     width: 100%;
