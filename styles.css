@@ -17,12 +17,6 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
-  text-align: center;
-  margin: 1% 0;
-  font-size: 2em;
-}
-
 .titre-responsive {
   display: none;
 }
@@ -37,8 +31,8 @@ h1 {
 }
 
 #game {
-  width: 650px;
-  max-width: 700px;
+  width: 600px;
+  max-width: 1000px;
   border-radius: 5px;
   background-color: rgba(219, 217, 217, 0.486);
   color: #ffffff;
@@ -81,9 +75,9 @@ button {
   background-image: linear-gradient(#0a0a23, #0a0a23);
   border: 3px solid #0a0a23;
   transition: opacity 0.3s, transform 0.3s;
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding: 2px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .fade-in {
@@ -134,7 +128,6 @@ footer {
 @media (max-width: 500px) {
   #game {
     width: 100%;
-    padding: 20px;
   }
   .stat {
     font-size: 1.2em;
