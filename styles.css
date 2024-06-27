@@ -127,13 +127,14 @@ footer {
 
 @media (max-width: 500px) {
   #game {
-    width: 100%;
+    width: 450px;
+    margin: 25% 0 0 0;
   }
   .stat {
     font-size: 1.2em;
   }
   button {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   #text {
     font-size: 1em;
