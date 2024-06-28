@@ -140,15 +140,14 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    margin: 0;
   }
 
   #game {
     width: 100%; 
-    max-width: 95%;
-    max-height: 30%;
+    max-width: 100%;
     text-align: center;
     box-sizing: border-box; 
+    transform: translateY(80%);
   }
   #game .image img {
     width: 100%;
