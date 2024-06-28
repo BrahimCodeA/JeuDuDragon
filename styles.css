@@ -150,10 +150,11 @@ footer {
     width: 100%;
   }
   .stat {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   button {
-    font-size: 0.2em;
+    font-size: 10px;
+    color: red;
   }
   #text {
     font-size: 0.6em;
