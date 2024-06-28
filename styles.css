@@ -15,6 +15,10 @@ body {
   background-size: cover;
   overflow-x: hidden;
   background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 2% auto;
 }
 
 .titre-responsive {
@@ -126,7 +130,7 @@ footer {
 
 @media (max-width: 500px) {
   html, body {
-    height: 100%; /* Assure que html et body prennent toute la hauteur */
+    height: 100%; 
     margin: 0;
     padding: 0;
   }
@@ -135,17 +139,20 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    height: 100vh; 
     margin: 0;
   }
 
   #game {
-    width: 90%; /* Utilise un pourcentage pour la réactivité */
-    max-width: 490px;
+    width: 100%; 
+    max-width: 95%;
+    max-height: 30%;
     text-align: center;
-    box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+    box-sizing: border-box; 
   }
-
+  #game .image img {
+    width: 100%;
+  }
   .stat {
     font-size: 1.2em;
   }
