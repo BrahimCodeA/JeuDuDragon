@@ -74,7 +74,7 @@ button {
   border: 3px solid #0a0a23;
   transition: opacity 0.3s, transform 0.3s;
   font-size: 0.7em;
-  padding: 2px;
+  padding: 3px;
   font-weight: 600;
 }
 
@@ -142,8 +142,9 @@ footer {
   }
 
   button {
-    font-size: 10px;
-    color: green;
+    font-size: 0.4em;
+    padding: 1px;
+    color: blueviolet;
   }
 
   #text {
