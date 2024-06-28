@@ -105,23 +105,23 @@ footer {
 @media (max-width: 1200px) {
   #game {
     width: 70%;
-    max-width: 800px;
+    max-width: 600px;
   }
 }
 
 @media (max-width: 800px) {
   #game {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 500px;
   }
   .stat {
-    font-size: 1.5em;
+    font-size: 0.9em;
   }
   button {
-    font-size: 1em;
+    font-size: 0.6em;
   }
   #text {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   footer {
     bottom: 0;
@@ -147,19 +147,21 @@ footer {
     max-width: 100%;
     text-align: center;
     box-sizing: border-box; 
-    transform: translateY(80%);
+    margin-left: 2px;
+    margin-right: 2px;
+
   }
   #game .image img {
     width: 100%;
   }
   .stat {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   button {
-    font-size: 0.9em;
+    font-size: 0.6em;
   }
   #text {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   footer {
     bottom: 0;
