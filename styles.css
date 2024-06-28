@@ -33,10 +33,9 @@ body {
 #game {
   width: 600px;
   max-width: 1000px;
-  border-radius: 5px;
-  background-color: rgba(219, 217, 217, 0.486);
+  border-radius: 3px;
   color: #ffffff;
-  border: 6px solid black;
+  border: 3px solid black;
   box-shadow: 10px 10px 10px rgba(188, 124, 124, 0.1);
   text-align: center;
 }
@@ -98,16 +97,17 @@ footer {
   text-align: center;
 }
 
+
 @media (max-width: 1200px) {
   #game {
-    width: 70%;
+    width: 80%;
     max-width: 600px;
   }
 }
 
 @media (max-width: 800px) {
   #game {
-    width: 100%;
+    width: 90%;
     max-width: 500px;
   }
   .stat {
@@ -119,55 +119,42 @@ footer {
   #text {
     font-size: 0.9em;
   }
-  footer {
-    bottom: 0;
-  }
 }
 
 @media (max-width: 500px) {
-  html, body {
-    height: 100%; 
-    margin: 0;
-    padding: 0;
-  }
-
   body {
-    align-items: center;
-    height: 100vh; 
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
   }
 
   #game {
-    position: absolute;
-    top: 0;
-    margin: 1%;
-    width: 100%; 
-    max-width: 100%;
+    margin: 5%;
+    width: 990%;
+    max-width: 99%;
     text-align: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    flex: 1;
   }
-  #game .image img {
-    width: 100%;
-  }
+
   .stat {
     font-size: 0.7em;
   }
+
   button {
     font-size: 10px;
-    color: red;
+    color: green;
   }
+
   #text {
     font-size: 0.6em;
   }
+
   footer {
-    position: absolute;
-    bottom: 0;
-    padding: 5px 5px;
+    padding: 5px;
     font-size: 10px;
-    z-index: 1000;
   }
 }
-
 
 
   
